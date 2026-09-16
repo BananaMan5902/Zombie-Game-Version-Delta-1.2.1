@@ -1,0 +1,121 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Survival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game">
+
+    <canvas id="canvas"></canvas>
+
+    <div id="hud">
+
+        <div id="stats">
+            <div class="title">ZOMBIE SURVIVAL</div>
+            <div>Wave: <b id="wave">1</b> / 100</div>
+            <div>Kills: <b id="kills">0</b></div>
+            <div>Health: <b id="health">100</b></div>
+            <div>Damage Bonus: <b id="bonus">+0%</b></div>
+        </div>
+
+        <div id="weaponBox">
+            <div id="weaponName">PISTOL</div>
+            <div id="ammo">12 / ∞</div>
+            <div class="small">
+                1 Pistol · 2 Shotgun · 3 Flamethrower ·
+                4 Machine Gun · 5 Rifle
+            </div>
+        </div>
+
+        <div id="marketHUD">
+            🏪 MARKET<br>
+            <span id="marketText">100 kills → +5% damage</span>
+        </div>
+
+        <div id="waveMessage"></div>
+
+    </div>
+
+    <div id="marketMenu">
+
+        <div class="marketWindow">
+
+            <h1>MARKET</h1>
+
+            <p>
+                Spend 100 kills for a permanent
+                <b>+5% damage</b> to every weapon.
+            </p>
+
+            <div class="marketKills">
+                Kills: <span id="marketKills">0</span>
+            </div>
+
+            <button id="upgradeButton">
+                BUY +5% DAMAGE — 100 KILLS
+            </button>
+
+            <button id="closeMarket">
+                CLOSE
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="startScreen">
+
+        <h1>ZOMBIE SURVIVAL</h1>
+
+        <p>Survive 100 waves.</p>
+
+        <button id="startButton">
+            START
+        </button>
+
+        <div class="instructions">
+            <b>CONTROLS</b><br><br>
+
+            WASD — Move<br>
+            Mouse — Aim<br>
+            Left Click — Fire<br>
+            Shift — Sprint<br><br>
+
+            1 — Pistol<br>
+            2 — Shotgun<br>
+            3 — Flamethrower<br>
+            4 — Machine Gun<br>
+            5 — Rifle<br><br>
+
+            Visit the <b>MARKET</b> in the center
+            to buy damage upgrades.
+        </div>
+
+    </div>
+
+    <div id="gameOver">
+
+        <h1 id="gameOverTitle">
+            GAME OVER
+        </h1>
+
+        <p id="gameOverText"></p>
+
+        <button id="restartButton">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
+```
